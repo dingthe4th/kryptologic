@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scoringSystemPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(skyblue,white);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kryptologic.MainGame.HowToPlayController">
+   <children>
+      <Text fill="WHITE" layoutX="317.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORING SYSTEM">
+         <font>
+            <Font name="Segoe UI Black" size="82.0" />
+         </font>
+      </Text>
+      <Text fill="#757575" layoutX="180.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ten hands of Krypto equal one game. Players receive one point for each &quot;Krypto&quot;. Players receive double their previous hand score each time they &quot;Krypto&quot; repetitively in sequence. A score returns to &quot;1&quot; when sequence is broken. When players &quot;Krypto&quot; in error, they receive a minus one (-1) in the score box for that hand. They are also eliminated from play of that hand and a new hand is re-dealt for the remaining players. All players are then eligible to score the next hand unless another error in &quot;Kryptoing&quot; occurs." textAlignment="JUSTIFY" wrappingWidth="994.1484375">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="243.0" fitWidth="864.0" layoutX="245.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../cards/scoreboard.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="backButton" layoutX="40.0" layoutY="700.0" onAction="#backToSampleGPlay" prefHeight="60.0" prefWidth="180.0" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

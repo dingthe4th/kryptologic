@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aBoutPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kryptologic.MainGame.aBoutController">
+   <children>
+      <JFXTabPane prefHeight="800.0" prefWidth="1280.0">
+         <tabs>
+            <Tab text="GAME">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="280.0" fitWidth="322.0" layoutX="170.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+            <Tab text="SCOREBOARD">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <GridPane gridLinesVisible="true" layoutY="62.0" prefHeight="600.0" prefWidth="1280.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="H5" textAlignment="JUSTIFY" GridPane.columnIndex="5">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="H6" textAlignment="JUSTIFY" GridPane.columnIndex="6">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="H7" textAlignment="JUSTIFY" GridPane.columnIndex="7">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="116.0" text="H8" textAlignment="JUSTIFY" GridPane.columnIndex="8">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="H9" textAlignment="JUSTIFY" GridPane.columnIndex="9">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="H10" textAlignment="JUSTIFY" GridPane.columnIndex="10">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="FINAL" textAlignment="JUSTIFY" GridPane.columnIndex="11">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="H1" textAlignment="JUSTIFY" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="H2" textAlignment="JUSTIFY" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="H3" textAlignment="JUSTIFY" GridPane.columnIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="H4" textAlignment="JUSTIFY" GridPane.columnIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY" GridPane.rowIndex="-1">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="116.0" text="PLAYER" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

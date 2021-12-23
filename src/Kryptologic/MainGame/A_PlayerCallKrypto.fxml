@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="checkerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(skyblue,white);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kryptologic.MainGame.B5_KryptoChecker">
+   <children>
+      <ImageView fitHeight="524.0" fitWidth="516.0" layoutX="764.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/jumping_penguin.gif" />
+         </image>
+         <effect>
+            <Glow level="0.68">
+               <input>
+                  <Blend />
+               </input>
+            </Glow>
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="23.0" layoutY="35.0" prefHeight="680.0" prefWidth="773.0" style="-fx-background-color: linear-gradient(teal,#30D5C8); -fx-background-radius: 29;">
+         <children>
+            <HBox layoutX="63.0" layoutY="565.0" spacing="30.0">
+               <children>
+                  <JFXButton fx:id="checkButton" onAction="#kryptoCheckerCaller" prefHeight="50.0" prefWidth="200.0" text="CHECK">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="updateScoreButton" onAction="#setUpdateScoreButton" prefHeight="50.0" prefWidth="200.0" text="UPDATE SCORE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="nextHandButton" onAction="#setNextHandButton" prefHeight="50.0" prefWidth="200.0" text="NEXT HAND">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <JFXListView fx:id="playersListView" layoutX="28.0" layoutY="27.0" onMouseClicked="#setPlayersListViewUpdate" prefHeight="192.0" prefWidth="718.0" />
+            <JFXTextField fx:id="expressionField" alignment="CENTER" layoutX="29.0" layoutY="229.0" prefHeight="75.0" prefWidth="718.0" text="Enter logical expression here">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#b6efff" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#81cdd7" />
+                        <Stop color="#d3f9ff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+            </JFXTextField>
+            <VBox layoutX="46.0" layoutY="346.0" spacing="25.0">
+               <children>
+                  <HBox spacing="20.0">
+                     <children>
+                        <JFXButton fx:id="andButton" onAction="#handleAnd" prefHeight="80.0" prefWidth="80.0" text="∧">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="orButton" onAction="#handleOr" prefHeight="80.0" prefWidth="80.0" text="∨">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="nandButton" onAction="#handleNand" prefHeight="80.0" prefWidth="80.0" text="↑">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="norButton" onAction="#handleNor" prefHeight="80.0" prefWidth="80.0" text="↓">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="trueButton" onAction="#handleTrue" prefHeight="80.0" prefWidth="80.0" text="T">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#handleCloseP" prefHeight="80.0" prefWidth="80.0" text=")">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox spacing="20.0">
+                     <children>
+                        <JFXButton fx:id="notButton" onAction="#handleNot" prefHeight="80.0" prefWidth="80.0" text="¬">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="iffButton" onAction="#handleIff" prefHeight="80.0" prefWidth="80.0" text="⇔">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="ifButton" onAction="#handleIf" prefHeight="80.0" prefWidth="80.0" text="→">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#handleXor" prefHeight="80.0" prefWidth="80.0" text="⊻" fx:id="xorButton">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="falseButton" onAction="#handleFalse" prefHeight="80.0" prefWidth="80.0" text="F">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#handleOpenP" prefHeight="80.0" prefWidth="80.0" text="(">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <JFXButton fx:id="backSpaceButton" layoutX="644.0" layoutY="389.0" onAction="#handleBackSpace" prefHeight="100.0" prefWidth="100.0" text="⌫" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="37.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="456.0" layoutY="690.0" />
+      <StackPane layoutX="906.0" layoutY="234.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="118.0" opacity="0.2" strokeType="INSIDE" width="307.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#54ebff" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <Label fx:id="penguMsgPrompt" alignment="CENTER" prefHeight="106.0" prefWidth="280.0" text="Hmmph!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <Label fx:id="kryptoWindowMsgPrompt" alignment="CENTER" layoutX="-1.0" layoutY="738.0" prefHeight="36.0" prefWidth="809.0" text="Select player who called for Krypto.">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#a1a1a1" />
+                  <Stop color="#489ed0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <HBox layoutX="821.0" layoutY="101.0">
+         <children>
+            <ImageView fx:id="flopCard1" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cards/blankCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="flopCard2" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cards/blankCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="flopCard3" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cards/blankCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="turnCard" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cards/blankCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="riverCard" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cards/blankCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="targetCard" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cards/blankOrange.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="828.0" layoutY="52.0">
+         <children>
+            <Label fx:id="kryptoWindowMsgPrompt1" alignment="CENTER" prefHeight="36.0" prefWidth="424.0" text="Current Hand">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#a1a1a1" />
+                        <Stop color="#489ed0" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

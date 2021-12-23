@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: dimgrey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kryptologic.MainGame.B1_Welcome_Logos">
+   <children>
+      <HBox layoutX="264.0" layoutY="208.0" spacing="40.0">
+         <children>
+            <ImageView fitHeight="338.0" fitWidth="344.0">
+               <image>
+                  <Image url="@../assets/DLSU.png" />
+               </image>
+               <effect>
+                  <Reflection />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="341.0" fitWidth="369.0">
+               <image>
+                  <Image url="@../assets/GCOE.png" />
+               </image>
+               <effect>
+                  <Blend mode="DARKEN">
+                     <topInput>
+                        <Reflection />
+                     </topInput>
+                  </Blend>
+               </effect>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

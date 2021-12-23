@@ -1,0 +1,25 @@
+.list-cell {
+    -fx-background-color: white;
+	-fx-font-weight: bold;
+	-fx-font-size: 20;
+	-fx-alignment: center;
+	-fx-text-fill: black;
+}
+.list-view {
+    -fx-background-color: white;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+	-fx-font-size: 20;
+	-fx-alignment: center;
+	-fx-text-fill: black;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: teal;
+    -fx-text-fill: white;
+}

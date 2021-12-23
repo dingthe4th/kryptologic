@@ -1,0 +1,86 @@
+.tab {
+	-fx-background-color: linear-gradient(grey,black);
+	-fx-pref-width: 635; 
+	-fx-pref-height: 60;
+}
+
+.button {
+    -fx-background-color: #008080;
+	-fx-background-radius: 80;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+	-fx-background-color: white;
+	-fx-background-radius: 80;
+	-fx-text-fill: linear-gradient(#008080,#00E3FF);
+	-fx-opacity: 1;
+}
+
+.button:pressed {
+	-fx-background-color: #008080;   
+	-fx-background-radius: 80;	
+    -fx-text-fill: white;
+	-fx-opacity: 1;
+}
+
+.root {
+	-fx-background-color: linear-gradient(grey,black);
+}
+
+.tab-header-background {
+	-fx-background-color: grey;
+}
+
+.label {
+	-fx-font-weight: bold;
+	-fx-font-size: 25;
+	-fx-alignment: center;
+	-fx-text-fill: white;
+}
+
+.table-view {
+	-fx-background-color: transparent;
+	-fx-font-size: 25;
+}
+
+.table-view .table-cell{
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-column {
+	-fx-alignment: CENTER;
+}
+
+.table-row {
+	-fx-alignment: CENTER;
+}
+
+.table-row-cell{
+    -fx-background-color: transparent;
+	-fx-alignment: CENTER;
+}
+.table-column-cell{
+    -fx-background-color: transparent;
+	-fx-alignment: CENTER;
+}
+
+.table-row-cell:empty{
+	-fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+.table-column-cell:empty {
+	-fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+	-fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+	-fx-background-color: orange;
+	-fx-alignment: CENTER;
+}

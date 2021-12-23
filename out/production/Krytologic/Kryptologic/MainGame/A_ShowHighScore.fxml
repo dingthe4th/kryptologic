@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scorePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kryptologic.MainGame.B7_ShowScoreBoard">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1280.0">
+         <image>
+            <Image url="@../assets/blackboard.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="scoreBoard" layoutY="128.0" prefHeight="589.0" prefWidth="1280.0">
+         <columns>
+            <TableColumn fx:id="playerName" prefWidth="200.0" text="PLAYER" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="H1" />
+            <TableColumn fx:id="hand1" minWidth="0.0" prefWidth="88.0" text="H1" />
+            <TableColumn fx:id="hand2" minWidth="0.0" prefWidth="88.0" text="H2" />
+            <TableColumn fx:id="hand3" minWidth="0.0" prefWidth="88.0" text="H3" />
+            <TableColumn fx:id="hand4" minWidth="0.0" prefWidth="88.0" text="H4" />
+            <TableColumn fx:id="hand5" minWidth="0.0" prefWidth="88.0" text="H5" />
+            <TableColumn fx:id="hand6" minWidth="0.0" prefWidth="88.0" text="H6" />
+            <TableColumn fx:id="hand7" minWidth="0.0" prefWidth="88.0" text="H7" />
+            <TableColumn fx:id="hand8" minWidth="0.0" prefWidth="88.0" text="H8" />
+            <TableColumn fx:id="hand9" minWidth="0.0" prefWidth="88.0" text="H9" />
+            <TableColumn fx:id="hand10" minWidth="0.0" prefWidth="88.0" text="H10" />
+            <TableColumn fx:id="handTotal" minWidth="0.0" prefWidth="200.0" text="TOTAL" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="exitGameButton" layoutX="893.0" layoutY="730.0" onAction="#exitGame" prefHeight="60.0" prefWidth="160.0" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="newGameButton" layoutX="1083.0" layoutY="730.0" onAction="#backToMainMenu" prefHeight="60.0" prefWidth="160.0" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="119.0" fitWidth="264.0" layoutX="516.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Logo2.png" />
+         </image>
+         <effect>
+            <Glow level="0.5" />
+         </effect>
+      </ImageView>
+      <Label layoutX="29.0" layoutY="740.0" prefHeight="36.0" prefWidth="847.0" text="GAME FINISHED. Thank you for playing KryptoLogic :)" />
+   </children>
+</AnchorPane>

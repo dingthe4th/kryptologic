@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(skyblue,white);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kryptologic.MainGame.B3_GameWindow_2">
+   <children>
+      <ImageView fitHeight="201.0" fitWidth="708.0" layoutX="287.0" layoutY="70.0">
+         <image>
+            <Image url="@assets/Logo2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="532.0" fitWidth="717.0" layoutX="149.0" layoutY="212.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/jumping_penguin.gif" />
+         </image>
+      </ImageView>
+      <VBox layoutX="607.0" layoutY="296.0" prefHeight="430.0" prefWidth="411.0" spacing="20.0">
+         <children>
+            <JFXButton fx:id="playGame" onAction="#startNewGame" prefHeight="74.0" prefWidth="411.0" text="PLAY GAME">
+               <font>
+                  <Font name="Segoe UI Bold" size="42.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="howToPlay" onAction="#handleHowToPlay" prefHeight="74.0" prefWidth="411.0" text="HOW TO PLAY">
+               <font>
+                  <Font name="Segoe UI Bold" size="42.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="aBout" onAction="#handleAbout" prefHeight="74.0" prefWidth="411.0" text="ABOUT">
+               <font>
+                  <Font name="Segoe UI Bold" size="42.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="exitGame" onAction="#exitGamePrompt" prefHeight="74.0" prefWidth="411.0" text="EXIT GAME">
+               <font>
+                  <Font name="Segoe UI Bold" size="42.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
